@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>색 테이블 만들기</title>
+        <style>
+            #color1 {background-color:brown; width:100px; height:50px;}
+            #color2 {background-color:deepskyblue; width:100px; height:50px;}
+            #color3 {background-color:blueviolet; width:100px; height:50px;}
+            #color4 {background-color:gold; width:100px; height:50px;}
+            #color5 {background-color:darkorange; width:100px; height:50px;}
+            #color6 {background-color:olivedrab; width:100px; height:50px;}
+            th{
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>색 이름과 코드</h3>
+        <hr>
+        <table border="1">
+            <thead>
+                <tr><th>이름</th><th>코드</th><th>색</th><th>이름</th><th>코드</th><th>색</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Brown</td><td>#A52A2A</td><td><div id="color1"></div></td>
+                    <td>DeepSkyBlue</td><td>#00BFFF</td><td><div id="color2"></div></td></tr>
+                <tr><td>Blueviolet</td><td>#8A2BE2</td><td><div id="color3"></div></td>
+                    <td>Gold</td><td>#FFD700</td><td><div id="color4"></div></td></tr>
+                <tr><td>DarkOrange</td><td>#FF8C00</td><td><div id="color5"></div></td>
+                    <td>OliveDrab</td><td>#6B8E23</td><td><div id="color6"></div></td></tr>
+            </tbody>
+        </table>
+    </body>
+</html>

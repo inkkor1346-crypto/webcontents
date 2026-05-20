@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>자기 소개 웹 페이지 작성</title>
+        <meta name="description" content="자기 자신에 대한 간단한 소개">
+        <meta name="keywords" content="관심분야, 취미활동, 강의시간표">
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="index,follow">
+        <meta name="author" content="Jaehun">
+        <style>
+            table{
+                border-collapse:collapse;
+            }
+            td,th{text-align: left; padding: 5px; height: 15px; width: 100px;}
+            thead,tfoot{background: darkgray; color:yellow;}
+            tbody tr:nth-child(even){background: aliceblue;}
+            tbody tr:hover{background: pink;}
+            td,tfoot th{border-bottom: 1px solid gray;}
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>About me</h1>
+            <hr>
+            <p>안녕하세요? 제 이름은 김재훈입니다. 올해 대학교를 입학한 새내기입니다.
+                다양한 관심분야와 취미 활동을 하고 있습니다. 즐거운 하루들 되세요 ~
+            </p>
+        </div>
+
+        <div id="navigation">
+            <h2>목차</h2>
+            <ul>
+                <li><a href="#interest">관심분야</a></li>
+                <li><a href="#hobby">취미활동</a></li>
+                <li><a href="#timetable">강의시간표</a></li>
+            </ul>
+        </div>
+
+        <div id="container">
+            <div>
+                <h2 id="interest">관심분야</h2>
+                <hr>
+                <ul>
+                    <li>컴퓨터 하드웨어(Computer Hardware)</li>
+                        <ul>
+                            <li>CPU(Central Processing Unit)</li>
+                            <li>시스템 메모리(Random Access Memory)</li>
+                            <li>그래픽 카드(Graphics Card)</li>
+                            <li>보조기억장치(Secondary Storage)</li>
+                        </ul>
+                    <li>게임</li>
+                        <ul>
+                            <li>MOBA(Multiplayer Online Battle Arena): 플레이어가 하나의 캐릭터를 선택하여 정해진 하나의 맵에서 레벨과 스킬을 올리고
+                                아이템을 갖춰 영웅을 강화시켜 상대방 진영을 파괴하는 실시간 전략/전술 공성 게임장르
+                            </li>
+                            <li>FPS(First-Person Shooter): 플레이어가 게임상 캐릭터의 1인칭 시점을 통해 총기류 등의 무기로 진행하는 슈팅 게임장르</li>
+                            <li>RPG(Role-Playing Game): 플레이어가 주어진 세계관 또는 시스템에 맞추어 배정된 역할에서 요구되는 행동을 수행하면서,
+                                협동 또는 경쟁하여 과제를 해결해 나가는 게임장르
+                            </li>
+                            <li>오픈 월드(Open World): 이동의 자유를 기본으로 높은 자유도의 게임 플레이까지 제공하는 게임장르</li>
+                        </ul>
+                    <li>프로그래밍 언어(Programming Language)</li>
+                        <ul>
+                            <li>C언어(C Language)</li>
+                            <li>파이썬(Python)</li>
+                            <li>자바(Java)</li>
+                        </ul>        
+                </ul>
+            </div>
+
+            <div>
+                <h2 id="hobby">취미 활동</h2>
+                <hr>
+                <table border="1">
+                    <tfoot>
+                        <tr><th>playing game</th><th>playing soccer</th><th>taking a walk</th></tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td><img src="media/game.jpg" width="200" height="200" alt="게임"></td>
+                            <td><img src="media/soccer.jpg" width="200" height="200" alt="축구"></td>
+                            <td><img src="media/walk.jpg" width="200" height="200" alt="산책"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h2 id="timetable">강의 시간표(2026년 1학기)</h2>
+                <hr>
+                <table border="1">
+                    <thead>
+                        <tr><th>구분</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>09</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>10</td><td></td><td></td><td rowspan="3">인터넷 콘텐츠<br>(공603)</td><td rowspan="3">컴퓨터 과학개론<br>(공608)</td><td></td></tr>
+                        <tr><td>11</td><td></td><td></td><td></td></tr>
+                        <tr><td>12</td><td></td><td></td><td></td></tr>
+                        <tr><td>01</td><td></td><td></td><td rowspan="2">sw개발 문제해결능력<br>(공608)</td><td></td><td></td></tr>
+                        <tr><td>02</td><td rowspan="3">프로그래밍 언어실습I<br>(공603)</td><td></td><td rowspan="2">디자인 씽킹<br>(예215)</td><td></td></tr>
+                        <tr><td>03</td><td></td><td></td><td></td></tr>
+                        <tr><td>04</td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>05</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

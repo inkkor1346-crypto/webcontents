@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>자기 소개 웹 페이지 작성</title>
+        <style> 
+            html, body{
+                padding:0px;
+                margin:0px;
+                height:100%;
+                }
+            body{
+                background-color:aliceblue;
+                }
+            header{
+                height:10%;
+                background-color:yellow;
+                overflow:hidden;
+                }
+            h1{
+                text-align:center;
+                color:brown;
+                }
+            h2{
+                text-decoration:none;
+                text-shadow:2px 2px 5px skyblue;
+                color:blue;
+                }
+            h3{
+                color:blue;
+                font-size:35px;
+                }
+            p{
+                font-family:"휴먼편지체";
+                }
+                nav{
+                width:20%;
+                background:orange;
+                float:left;
+            }
+            section{
+                width:80%;
+                background:lightblue;
+                float:left;
+            }
+            footer{
+                background:plum;
+                clear:both;
+                overflow:hidden;
+            }
+            .time{background-color:skyblue;}
+            .study{background-color:greenyellow;}
+            thead{background: darkgray; color:white;}
+            td, th{
+                text-align:center;
+                padding:5px;
+                height:40px;
+                width:100px;
+                }
+            #round1{
+            width:2000;
+            border:2px solid plum;
+            background-color:plum;
+            border-radius:50px;
+                }
+            #main{
+                overflow:hidden;
+                background:orange;
+                }
+        </style>
+    </head>
+    <body>
+        <header>
+        <div id="header">
+            <h1>About me</h1> 
+            <p style="border-bottom:1px solid black; padding-bottom:15px;">
+            안녕하세요? 제 이름은 박성현입니다. 올해 대학교를 입학한 새내기입니다.<br>
+            다양한 관심분야와 취미 활동을 하고 있습니다. 즐거운 하루들 되세요~
+            </p>
+        </header>
+        <div id="main">
+        <nav>
+            <div id="contents">
+                <h2>목차</h2>
+                <ul style="border:1px dotted black">
+                    <li><a href="#interest">관심분야</a></li>
+                    <li><a href="#hobby">취미활동</a></li>
+                    <li><a href="#timetable">강의시간표</a></li> 
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <article>
+                <div id="interest">
+                    <h2>관심분야</h2>
+
+                    <hr>
+
+                    <ul>
+                        <li>
+                            알고리즘
+                            <ul>
+                                <li><p>정렬: 데이터를 비교하여 정렬하는 것</p></li>
+                                <li><p>탐색: 탐색할 자료를 찾는 방법</p></li>
+                                <li><p>그래프: 규칙을 정해 데이터를 탐색하는 방식</p></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            데이터 과학
+                            <ul>
+                                <li><p>데이터 분석</p></li>
+                                <li><p>통계</p></li>
+                                <li><p>시각화</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            네트워크
+                            <ul>
+                                <li><p>노드</p></li>
+                                <li><p>링크</p></li>
+                                <li><p>허브</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        </article>
+        <article>
+            <div id="hobby">
+                <h2>취미활동</h2>
+                <hr>
+                <table border="1" width="850" height="250">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <img width="280" height="180" 
+                                src="https://github.com/user-attachments/assets/f3952880-43a0-4f16-9581-9a7a1154dbfa" 
+                                alt="자전거">
+                            </td>
+                            <td align="center">
+                                <img width="280" height="180" 
+                                src="https://github.com/user-attachments/assets/883ebbe9-4d76-4ce1-bb9a-9f3467ce7325" 
+                                alt="달리기">
+                            </td>
+                            <td align="center">
+                                <img width="280" height="180" 
+                                src="https://github.com/user-attachments/assets/686237d0-d566-433c-a5b2-0c73f0cf226f" 
+                                alt="독서">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">ridding</td>
+                            <td align="center">running</td>
+                            <td align="center">reading</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <article>
+        <div id="timetable">
+            <h3>강의 시간표(2026년 1학기)</h3>
+            <hr>
+            <table border="1">
+                <tbody>
+                    <thead>
+                    <tr>
+                        <th>구분</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td class="time">10</td><td></td><td class="study" rowspan="3">프로그래밍 언어실습1<td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td class="time">11</td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td class="time">12</td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td class="time">1</td><td></td><td></td><td class="study" rowspan="3">인터넷콘텐츠</td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td class="time">2</td><td class="study"rowspan="2">SW개발문제해결능력<td></td><td class="study" rowspan="3">컴퓨터 과학개론<td></td>
+                    </tr>
+                    <tr>
+                        <td class="time">3</td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td class="time">4</td><td></td><td></td><td></td><td>
+                    </tr>
+                    <tr>
+                        <td class="time">5</td><td></td><td></td><td></td rowspan="3"><td></td><td rowspan="3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </article>
+        </section>
+        </div>
+        <footer>
+            <ul id="round1">
+                <li>
+                    <a href="https://inkkor1346-crypto.github.io/webcontents/survey2.html">
+                    <p>설문조사</p>
+                    </a>
+                </li>
+
+                <li>
+                <p>2026-4-16 by 박성현</p>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
